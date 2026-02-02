@@ -1,5 +1,7 @@
-# Claude Code
-.claude/
+# Claude Code (project-specific settings only)
+/.claude/
+# But track the dotfiles version
+!claude/.claude/
 
 # Local configuration files (not to be shared)
 *.local
