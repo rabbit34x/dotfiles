@@ -1,19 +1,38 @@
 # dotfiles
 
-I use GNU `stow` to install the configuration.
+Personal configuration files managed with GNU `stow`.
 
-e.g.
+## Installation
+
+Use GNU `stow` to symlink configurations to your home directory:
 
 ```bash
-$ stow bash git neovim
+$ stow bash git neovim shell vim
 ```
 
-## .gitconfig.user
+## Initial Setup
 
-```
+### Git Configuration
+
+Create `git/.gitconfig.user` with your personal information:
+
+```bash
+$ cat > git/.gitconfig.user << 'EOF'
 [user]
-   name = <username>
-   email = <email>
+	name = Your Name
+	email = your-email@example.com
+EOF
+```
+
+This file is excluded from version control and contains your personal Git identity.
+
+### Bash Configuration (Optional)
+
+If you have machine-specific bash settings, create `~/.bashrc.local`:
+
+```bash
+$ touch ~/.bashrc.local
+# Add your local settings here
 ```
 
 ## Import GPG key from Keybase

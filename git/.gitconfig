@@ -16,7 +16,7 @@
 [user]
   signingkey = A850F1A1869AB16E
 [commit]
-  gpgsign = true
+  gpgsign = false
 [ghq]
 	root = ~/src
 [alias]

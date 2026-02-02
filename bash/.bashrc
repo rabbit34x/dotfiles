@@ -1,6 +1,6 @@
 # bash
-source "${HOME}/.bashrc.local"
-source "/etc/bash_completion"
+[ -f "${HOME}/.bashrc.local" ] && source "${HOME}/.bashrc.local"
+[ -f /usr/share/bash-completion/bash_completion ] && source /usr/share/bash-completion/bash_completion || [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 alias ls="ls -CF --color=auto"
 alias ll="ls -lFh"
