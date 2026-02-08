@@ -7,9 +7,12 @@ alias ll="ls -lFh"
 alias la="ls -Al"
 
 # Paths
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 # keybase
 # https://github.com/keybase/keybase-issues/issues/2798
 export GPG_TTY=$(tty)
+
+# Starship prompt
+eval "$(starship init bash)"
 
